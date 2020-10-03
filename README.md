@@ -93,4 +93,11 @@ If you used this repository as a test you can go to CloudFormation and see two t
 
 Anytime you commit code to the repo/branch you specified it will trigger a new build and deploy it. This will be more relevant when you use it for your own repo/branch and not the test one since you don't have access to commit to this repository.
 
+## Troubleshooting
+
+1. Codepipeline failing in the deployment stage , with "unable to find stack {stack-id here}"
+
+* Solution
+
+  It could be that your role is missing the cloud-formation-stack permissions , update that manually
 
