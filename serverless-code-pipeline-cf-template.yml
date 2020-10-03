@@ -90,15 +90,7 @@ Resources:
             - s3:putObject
             - s3:getObject
             - codebuild:*
-            - 'cloudformation:List*'
-            - 'cloudformation:Get*'
-            - 'cloudformation:PreviewStackUpdate'
-            - 'cloudformation:ValidateTemplate'
-            - 'cloudformation:CreateStack'
-            - 'cloudformation:CreateUploadBucket'
-            - 'cloudformation:DeleteStack'
-            - 'cloudformation:Describe*'
-            - 'cloudformation:UpdateStack'
+            - cloudformation:*
             - 'lambda:Get*'
             - 'lambda:List*'
             - 'lambda:CreateFunction'
