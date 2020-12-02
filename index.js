@@ -1,10 +1,15 @@
+'use strict';
 
-const serverless = require('serverless-http');
-const express = require('express')
-const app = express()
-
-app.get('/', function (req, res) {
-  res.send('Hello World!')
-})
-
-module.exports.handler = serverless(app);
+module.exports.hello = async event => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify(
+      {
+        message: 'Go Serverless v1.0! Your function executed successfully!',
+        input: event,
+      },
+      null,
+      2
+    ),
+  };
+};
